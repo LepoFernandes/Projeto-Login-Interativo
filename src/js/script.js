@@ -1,11 +1,11 @@
-var btnLogin = window.document.querySelector(".wrap #login-btn"); 
-var btnCadastro = window.document.querySelector("#cadastro");
-var body = window.document.querySelector("body");
+var btnLogin = document.getElementById("login-btn");
+var btnCadastro = document.getElementById("cadastro");
+var body = document.querySelector("body");
 
-btnLogin.addEventListener("click", function(){
-    body.className = "sign-in-js"
+btnLogin.addEventListener("click", function () {
+    body.className = "sign-in-js";
 });
 
-btnCadastro.addEventListener("click", function(){
-    body.className = "sign-up-js"
+btnCadastro.addEventListener("click", function () {
+    body.className = "sign-up-js";
 });
