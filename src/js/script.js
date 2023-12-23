@@ -13,9 +13,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
  
-    var btnNormalLogin = document.getElementById("buttonnormal");
-    btnNormalLogin.addEventListener("click", function() {
-        
-        console.log("Botão de login normal clicado");
-    });
+   
 });

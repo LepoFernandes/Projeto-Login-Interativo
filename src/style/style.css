@@ -140,8 +140,6 @@ label{
     background-color: transparent;
     color: #86e6df;
     border: 2px solid #86e6df;
-    transform: scale(1.1);
-    transition: all 0.5s;
 }
 
 .wrap {
@@ -260,6 +258,7 @@ label{
     left: 65%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    animation: slidein 2s;
 }
 
 .sign-up-js .first-content .primeira-div,
@@ -274,5 +273,56 @@ label{
 
 .sign-up-js .content::before{
     left: 0;
+    animation: slideup 2s;
+}
+
+@keyframes slidein {
+    0%{
+        left: 0;
+        width: 40%;
+    }
+
+    25%{
+        left: 25%;
+        width: 45%;
+    }
+
+    50%{
+        left: 40%;
+        width: 50%;
+    }
+
+    75%{
+        width: 45%;
+        left: 55%;
+    }
+
+    100%{
+        width: 40%;
+        left: 60%;
+    }
+}
+
+@keyframes slideup {
+    0% {
+        width: 40%;
+        left: 60%;
+    }
+    25% {
+        width: 45%;
+        left: 55%;
+    }
+    50% {
+        width: 50%;
+        left: 40%;
+    }
+    75% {
+        width: 45%;
+        left: 25%;
+    }
+    100% {
+        width: 40%;
+        left: 0;
+    }
 }
 
