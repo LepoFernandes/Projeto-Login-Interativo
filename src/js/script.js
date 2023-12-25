@@ -12,6 +12,4 @@ document.addEventListener("DOMContentLoaded", function() {
         body.className = "sign-up-js";
     });
 
- 
-   
 });
